@@ -14,9 +14,9 @@ export interface Employee {
 }
 @Component({
   selector: 'app-employeedata',
-  imports: [CommonModule,FormsModule],
-  templateUrl: './employeedata.html',
-  styleUrl: './employeedata.css',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
+  template: `<div class="card"><h3>Employee Data</h3><p class="muted">Legacy placeholder</p></div>`,
   //changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Employeedata implements OnInit {

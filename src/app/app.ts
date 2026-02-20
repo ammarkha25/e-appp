@@ -8,9 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule, ReactiveFormsModule,Header, Footer],
+  standalone: true,
+  imports: [RouterOutlet, FormsModule, ReactiveFormsModule, Header, Footer],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 
 export class App {
